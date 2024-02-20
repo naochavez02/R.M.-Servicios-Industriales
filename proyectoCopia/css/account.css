@@ -1,0 +1,121 @@
+/* Estilos base */
+.contenedor {
+  padding: 15px;
+  margin-left: 16.2rem; /* Ancho del menú, ajusta según tus necesidades */
+  border-radius: 10px; /* Añade bordes redondeados */
+  z-index: 1; /* Asegura que el contenedor esté por encima del menú */
+  width: 200px; /* Ajusta este valor para cambiar el ancho */
+  height: 200px; /* Ajusta este valor para cambiar la altura */
+}
+
+.main-content h1 {
+  font-weight: 250;
+  font-weight: bold;
+  font-size: 26px;
+  background-image: linear-gradient(135deg, #A18D57 0%, #DECC8D 13%, #F8E7AA 25%, #DECC8D 38%, #A18D57 50%, #DECC8D 63%, #F8E7AA 75%, #DECC8D 88%, #A18D57 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline;
+}
+
+.card1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribuye los elementos en los extremos */
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.main-content {
+  margin-top: 15px;
+  width: 800px;
+  height: 350px;
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 16px;
+}
+
+.user-info {
+  padding: 16px;
+  text-align: right;
+}
+
+.user-info h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.user-info p {
+  margin: 8px 0;
+  color: #666;
+}
+
+/* Tarjeta de Inf. completa del Usuario */
+.main-content .l-container .table {
+  width: 70%;
+  border-collapse: collapse;
+  border-spacing: 0 10px;
+  font-size: 14px;
+}
+
+.main-content .l-container table td:nth-child(2) {
+  text-align: right;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 10px;
+  text-align: center;
+}
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+td:nth-child(2) {
+  text-align: right;
+  font-weight: bold;
+}
+
+.datos {
+  color: #666;
+}
+
+.responsable {
+  font-weight: bold;
+}
+
+/* Media Queries para hacer responsive */
+@media only screen and (max-width: 1200px) {
+  .contenedor {
+    margin-left: 0;
+  }
+
+  .main-content {
+    width: 120%;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content {
+    height: auto;
+  }
+
+  .contenedor {
+    margin-left: 0;
+  }
+}
